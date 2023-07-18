@@ -1,2 +1,2 @@
-# lista-de-contatos
-Lista de contatos feita com HTML e CSS
+# lista-de-contatos-grid
+Lista de contatos usando HTML e CSS com grid layout
