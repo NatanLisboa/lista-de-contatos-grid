@@ -6,44 +6,35 @@ body {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+    height: 100vh;
+}   
 
 .lista-de-contatos-wrapper {
-    width: 50vw;
+    width: 60%;
+    height: calc(100% - 71px);
+    margin: auto;
 }
 
 .lista-de-contatos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: 100%;
+    height: calc(100% - 49px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    margin: auto;
-    background-color: white;
-    overflow: auto;
-    min-width: 80%;
-    max-height: 300px;
-    padding: 10px;
-    box-sizing: border-box;
 }
 
-.lista-de-contatos hr {
-    width: 100%;
-    border-left: 0;
-    border-right: 0;
+.lista-de-contatos-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .content .titulo {
     text-align: center;
-}
-
-.lista-de-contatos li {
-    list-style: none;
-    display: flex;
-    gap: 20px;
 }
 
 .foto-do-usuario {
@@ -61,6 +52,7 @@ body {
 
 .dados-do-usuario {
     line-height: 0.25;
+    text-align: center;
 }
 
 .nome-do-usuario {
@@ -71,4 +63,18 @@ body {
 .email-do-usuario {
     font-size: 14px;
     color: lightgray;
+}
+
+.lista-de-contatos-item .background {
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-footer {
+    background-color: lightgray;
+    display: flex;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: space-around;
 }
