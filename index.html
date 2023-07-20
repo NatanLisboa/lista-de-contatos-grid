@@ -1,92 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de contatos</title>
-    <link href="styles/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main-grid.css">
+
 </head>
+
 <body>
-    <div class="content">
-        <div class="titulo-wrapper">
-            <h1 class="titulo">Lista de contatos</h1>
-        </div>
-        <div class="lista-de-contatos-wrapper">
-            <ul class="lista-de-contatos">
-                <li class="lista-de-contatos-item">
-                    <img class="background" src="images/thumb02.jpg">
-                    <img class="foto-do-usuario" src="images/1.jpg" alt="Foto de Brennan George">
-                    <div class="dados-do-usuario">
-                        <p class="nome-do-usuario">Brennan George</p>
-                        <p class="email-do-usuario">brennan.george@example.com</p>
-                    </div>
-                    <div class="card-footer">
-                        <img src="images/delete.png">
-                        <img src="images/edit.png">
-                    </div>
-                </li>
-                <li class="lista-de-contatos-item">
-                    <img class="background" src="images/thumb02.jpg">
-                    <img class="foto-do-usuario" src="images/4.jpg" alt="Foto do Ronaldo">
-                    <div class="dados-do-usuario">
-                        <p class="nome-do-usuario">Isabel Lewis</p>
-                        <p class="email-do-usuario">isabel.lewis@example.com</p>
-                    </div>
-                    <footer class="card-footer">
-                        <img src="images/delete.png">
-                        <img src="images/edit.png">
-                    </footer>
-                </li>
-                <li class="lista-de-contatos-item">
-                    <img class="background" src="images/thumb02.jpg">
-                    <img class="foto-do-usuario" src="images/2.jpg" alt="Foto da Ronalda">
-                    <div class="dados-do-usuario">
-                        <p class="nome-do-usuario">Adam Weaver</p>
-                        <p class="email-do-usuario">adam.weaver@example.com</p>
-                    </div>
-                    <footer class="card-footer">
-                        <img src="images/delete.png">
-                        <img src="images/edit.png">
-                    </footer>
-                </li>
-                <li class="lista-de-contatos-item">
-                    <img class="background" src="images/thumb02.jpg">
-                    <img class="foto-do-usuario" src="images/3.jpg" alt="Foto da Grega">
-                    <div class="dados-do-usuario">
-                        <p class="nome-do-usuario">Troy Butler</p>
-                        <p class="email-do-usuario">troy.butler@example.com</p>
-                    </div>
-                    <footer class="card-footer">
-                        <img src="images/delete.png">
-                        <img src="images/edit.png">
-                    </footer>
-                </li>
-                <li class="lista-de-contatos-item">
-                    <img class="background" src="images/thumb02.jpg">
-                    <img class="foto-do-usuario" src="images/5.jpg" alt="Foto do Código">
-                    <div class="dados-do-usuario">
-                        <p class="nome-do-usuario">Lisa Garcia</p>
-                        <p class="email-do-usuario">lisa.garcia@example.com</p>
-                    </div>
-                    <footer class="card-footer">
-                        <img src="images/delete.png">
-                        <img src="images/edit.png">
-                    </footer>                
-                </li>
-                <li class="lista-de-contatos-item">
-                    <img class="background" src="images/thumb02.jpg">
-                    <img class="foto-do-usuario" src="images/6.jpg" alt="Foto do Naoki">
-                    <div class="dados-do-usuario">
-                        <p class="nome-do-usuario">Carolyn Silva</p>
-                        <p class="email-do-usuario">carolyn.silva@example.com</p>
-                    </div>
-                    <footer class="card-footer">
-                        <img src="images/delete.png">
-                        <img src="images/edit.png">
-                    </footer>
-                </li>
-            </ul>
-        </div>
+    <h1 class="main-title">Lista de contatos</h1>
+
+    <div class="list-wrapper">
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-item__imagem">
+                    <img src="images/1.jpg" alt="Brennan George">
+                </div>
+
+                <div class="list-item__content">
+                    <p class="list-item__name">
+                        Brennan George
+                    </p>
+                    <p class="list-item__email">brennan.george@example.com</p>
+                </div>
+
+                <div class="list-item__action">
+                    <a href="#"><img src="images/delete.png" alt="Delete"></a>
+                    <a href="#"><img src="images/edit.png" alt="Edit"></a>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <div class="list-item__imagem">
+                    <img src="images/2.jpg" alt="Brennan George">
+                </div>
+
+                <div class="list-item__content">
+                    <p class="list-item__name">
+                        Adam Weaver
+                    </p>
+                    <p class="list-item__email">adam.weaver@example.com</p>
+                </div>
+
+                <div class="list-item__action">
+                    <a href="#"><img src="images/delete.png" alt="Delete"></a>
+                    <a href="#"><img src="images/edit.png" alt="Edit"></a>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <div class="list-item__imagem">
+                    <img src="images/3.jpg" alt="Brennan George">
+                </div>
+
+                <div class="list-item__content">
+                    <p class="list-item__name">
+                        Troy Butler
+                    </p>
+                    <p class="list-item__email">troy.butler@example.com</p>
+                </div>
+
+                <div class="list-item__action">
+                    <a href="#"><img src="images/delete.png" alt="Delete"></a>
+                    <a href="#"><img src="images/edit.png" alt="Edit"></a>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <div class="list-item__imagem">
+                    <img src="images/4.jpg" alt="Brennan George">
+                </div>
+
+                <div class="list-item__content">
+                    <p class="list-item__name">
+                        Isobel Lewis
+                    </p>
+                    <p class="list-item__email">isobel.lewis@example.com</p>
+                </div>
+
+                <div class="list-item__action">
+                    <a href="#"><img src="images/delete.png" alt="Delete"></a>
+                    <a href="#"><img src="images/edit.png" alt="Edit"></a>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <div class="list-item__imagem">
+                    <img src="images/5.jpg" alt="Brennan George">
+                </div>
+
+                <div class="list-item__content">
+                    <p class="list-item__name">
+                        Lisa Garcia
+                    </p>
+                    <p class="list-item__email">lisa.garcia@example.com</p>
+                </div>
+
+                <div class="list-item__action">
+                    <a href="#"><img src="images/delete.png" alt="Delete"></a>
+                    <a href="#"><img src="images/edit.png" alt="Edit"></a>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <div class="list-item__imagem">
+                    <img src="images/6.jpg" alt="Brennan George">
+                </div>
+
+                <div class="list-item__content">
+                    <p class="list-item__name">
+                        Carolyn Silva
+                    </p>
+                    <p class="list-item__email">carolyn.silva@example.com</p>
+                </div>
+
+                <div class="list-item__action">
+                    <a href="#"><img src="images/delete.png" alt="Delete"></a>
+                    <a href="#"><img src="images/edit.png" alt="Edit"></a>
+                </div>
+            </li>
+        </ul>
     </div>
+
 </body>
+
 </html>
